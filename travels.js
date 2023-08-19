@@ -18,3 +18,28 @@ export const travel = [
 		img: 'lake.png',
 	},
 ]
+
+export const info = [
+	{
+		firstText: 'Book and',
+		secondText: 'mind your own business',
+		img: 'info-1.png',
+		infoText: 'Tickets',
+		infoDescription: 'Make a booking with us and enjoy',
+	},
+	{
+		firstText: 'We find',
+		secondText: 'the best hotels',
+		img: 'info-2.png',
+		infoText: 'Hotels',
+		infoDescription: 'The Ideal Hotel at a Great Price',
+	},
+	{
+		firstText: 'Tours',
+		secondText: 'Adventures',
+		thirdText: 'Activities',
+		img: 'info-3.png',
+		infoText: 'Adventure',
+		infoDescription: 'Find & book tours, adventures, activities',
+	},
+]
