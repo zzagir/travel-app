@@ -36,8 +36,7 @@ export const info = [
 	},
 	{
 		firstText: 'Tours',
-		secondText: 'Adventures',
-		thirdText: 'Activities',
+		secondText: 'Adventures Activities',
 		img: 'info-3.png',
 		infoText: 'Adventure',
 		infoDescription: 'Find & book tours, adventures, activities',

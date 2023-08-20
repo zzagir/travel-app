@@ -14,8 +14,7 @@
 	font-weight: 300;
 	font-size: 42px;
 }
-.secondText,
-.thirdText {
+.secondText {
 	font-weight: 700;
 	font-size: 42px;
 }
@@ -36,44 +35,4 @@
 		margin: 16px 0;
 		text-align: center;
 	}
-}
-
-.footer {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: flex-end;
-}
-
-.path {
-	display: flex;
-	flex-direction: row;
-	gap: 8px;
-	align-items: flex-end;
-
-	span {
-		width: 14px;
-		height: 14px;
-		border-radius: 50%;
-		background-color: #fff;
-	}
-}
-
-.footerText {
-	font-weight: 600;
-	font-size: 22px;
-	color: #fff;
-}
-
-.active {
-	height: 32px !important;
-	background-color: #11dbc5 !important;
-	border-radius: 10px !important;
-}
-
-.infoLink {
-	width: 14px;
-	height: 14px;
-	border-radius: 50%;
-	background-color: #fff;
 }

@@ -1,0 +1,45 @@
+.footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.path {
+	display: flex;
+	flex-direction: row;
+	gap: 8px;
+	align-items: flex-end;
+}
+
+.footerButton {
+	font-weight: 600;
+	font-size: 22px;
+	color: #fff;
+	outline: none;
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+
+.footerText {
+	font-weight: 600;
+	font-size: 22px;
+	color: #fff;
+	cursor: pointer;
+}
+
+.active {
+	height: 32px !important;
+	background-color: #11dbc5 !important;
+	border-radius: 10px !important;
+}
+
+.infoLink {
+	cursor: pointer;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	background-color: #fff;
+	border: none;
+}
