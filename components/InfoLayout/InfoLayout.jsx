@@ -1,7 +1,9 @@
 'use client'
 import styles from './InfoLayout.module.scss'
 import Image from 'next/image'
+import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import cn from 'clsx'
 
 const InfoLayout = ({
 	firstText,
@@ -12,6 +14,12 @@ const InfoLayout = ({
 	infoDescription,
 }) => {
 	const path = usePathname()
+
+	let currentPath
+	if (path === '/info/1') currentPath = '/info/2'
+	else if (path === '/info/2') currentPath = '/info/3'
+	else currentPath = '/'
+
 	return (
 		<div className={styles.wrapper}>
 			<span className={styles.firstText}>
@@ -34,11 +42,30 @@ const InfoLayout = ({
 			</div>
 			<footer className={styles.footer}>
 				<div className={styles.path}>
-					<span className={path === '/info/1' ? styles.active : ''}></span>
-					<span className={path === '/info/2' ? styles.active : ''}></span>
-					<span className={path === '/info/3' ? styles.active : ''}></span>
+					<Link
+						href="/info/1"
+						className={cn(styles.infoLink, {
+							[styles.active]: path === '/info/1' ? styles.active : '',
+						})}
+					></Link>
+					<Link
+						href="/info/2"
+						className={cn(styles.infoLink, {
+							[styles.active]: path === '/info/2' ? styles.active : '',
+						})}
+					></Link>
+					<Link
+						href="/info/3"
+						className={cn(styles.infoLink, {
+							[styles.active]: path === '/info/3' ? styles.active : '',
+						})}
+					></Link>
 				</div>
-				<span className={styles.footerText}>Next</span>
+				<Link href={currentPath}>
+					<span className={styles.footerText}>
+						{path === '/info/3' ? 'Start' : 'Next'}
+					</span>
+				</Link>
 			</footer>
 		</div>
 	)

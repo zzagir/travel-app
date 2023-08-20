@@ -1,5 +1,5 @@
-import InfoLayout from '@/components/InfoLayout/InfoLayout'
-import { info } from '@/travels'
+import { info } from '../../../travels'
+import InfoLayout from '../../../components/InfoLayout/InfoLayout'
 
 const InfoPage = () => {
 	return (

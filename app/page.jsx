@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import styles from './page.module.scss'
 
 export default function Home() {
@@ -7,8 +8,12 @@ export default function Home() {
 				Let’s enjoy the<h1>Beautiful World</h1>
 			</span>
 			<div className={styles.buttons}>
-				<button className={styles.buttonOne}>Go to travel</button>
-				<button className={styles.buttonTwo}>More info</button>
+				<Link href="/" className={styles.button}>
+					<button className={styles.buttonOne}>Go to travel</button>
+				</Link>
+				<Link href="/info/1" className={styles.button}>
+					<button className={styles.buttonTwo}>More info</button>
+				</Link>
 			</div>
 		</div>
 	)
