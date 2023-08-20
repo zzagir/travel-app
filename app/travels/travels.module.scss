@@ -1,0 +1,85 @@
+.wrapper {
+	padding: 40px 28px;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	background: #ddf9f7;
+	overflow: hidden;
+}
+
+.layoutText {
+	display: flex;
+	flex-direction: column;
+	margin: 0 0 30px 0;
+
+	h2 {
+		font-size: 42px;
+		font-weight: 700;
+		margin-bottom: 18px;
+	}
+	span {
+		font-size: 18px;
+		font-weight: 400;
+	}
+}
+
+.travel {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 10px;
+	align-items: center;
+	justify-content: space-between;
+	overflow-y: scroll;
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}
+
+.travelBox {
+	width: 48%;
+	background: #fff;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	border-radius: 20px;
+
+	.travelText {
+		padding: 4px;
+
+		h2 {
+			font-weight: 500;
+			font-size: 18px;
+			margin: 10px 0 4px 0;
+		}
+		span {
+			font-weight: 400;
+			font-size: 16px;
+		}
+	}
+}
+
+.travelReviews {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	div {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		font-size: 18px;
+		font-weight: 400;
+		gap: 2px;
+	}
+}
+
+.imageContainer {
+	display: flex;
+	justify-content: center;
+	border-radius: 20px;
+}

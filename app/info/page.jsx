@@ -53,7 +53,7 @@ const InfoPage = () => {
 						</button>
 					) : (
 						<Link
-							href={'/'}
+							href={'/travels'}
 							onClick={handleNextClick}
 							className={styles.footerText}
 						>

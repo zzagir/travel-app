@@ -8,7 +8,7 @@ export default function Home() {
 				Let’s enjoy the<h1>Beautiful World</h1>
 			</span>
 			<div className={styles.buttons}>
-				<Link href="/" className={styles.button}>
+				<Link href="/travels" className={styles.button}>
 					<button className={styles.buttonOne}>Go to travel</button>
 				</Link>
 				<Link href="/info" className={styles.button}>
