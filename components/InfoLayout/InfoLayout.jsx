@@ -12,12 +12,12 @@ const InfoLayout = ({
 }) => {
 	return (
 		<div className={styles.wrapper}>
-			<span className={styles.firstText}>
-				{firstText}
+			<div className={styles.firstText}>
+				<span>{firstText}</span>
 				<h2 className={styles.secondText}>{secondText}</h2>
-			</span>
+			</div>
 			<div className={styles.info}>
-				<div style={{ width: '300px', height: '300px', position: 'relative' }}>
+				<div className={styles.imageContainer}>
 					<Image
 						src={`/${img}`}
 						alt={img}

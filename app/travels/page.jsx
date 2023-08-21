@@ -2,6 +2,7 @@ import styles from './travels.module.scss'
 import { travel } from '../../travels'
 import Image from 'next/image'
 import { AiFillStar } from 'react-icons/ai'
+import Link from 'next/link'
 
 const page = () => {
 	return (
@@ -12,7 +13,11 @@ const page = () => {
 			</div>
 			<div className={styles.travel}>
 				{travel.map((travel) => (
-					<div key={travel.id} className={styles.travelBox}>
+					<Link
+						key={travel.id}
+						className={styles.travelBox}
+						href={`/travels/${travel.id}`}
+					>
 						<div className={styles.imageContainer}>
 							<div
 								style={{
@@ -43,7 +48,7 @@ const page = () => {
 								</div>
 							</div>
 						</div>
-					</div>
+					</Link>
 				))}
 			</div>
 		</div>
